@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Observatório dos APLs|IFMG</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observatório dos APLs | IFMG</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>  host_url="https://sgrasiella-langflow-serenatto-chatapl.hf.spacehat
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #2f9e41;
             color: #3e2723;
         }
-        /* Header */
         header {
             background-color: rgba(255, 255, 255, 0.95);
             position: fixed;
@@ -35,8 +30,8 @@
             font-family: 'Barlow', serif;
         }
         .logo img {
-            height: 50px; 
-            width: auto; 
+            height: 50px;
+            width: auto;
         }
         .nav-links {
             display: flex;
@@ -51,30 +46,23 @@
         .nav-links a:hover {
             color: #8c774c;
         }
-                /* Anúncio */
-                .announcement-bar {
-            background-color: #2f9e41; 
-            color: white; 
+        .announcement-bar {
+            background-color: #2f9e41;
+            color: white;
             text-align: center;
             padding: 10px 0;
             font-size: 1.1rem;
             position: fixed;
-            top: 80px; 
+            top: 80px;
             width: 100%;
-            z-index: 999; 
+            z-index: 999;
             font-family: 'Barlow', serif;
         }
-        .announcement-bar p {
-            margin: 0;
-        }
-        .announcement-bar strong {
-            font-weight: bold;
-            color: #f5ebe0; 
-        }
-        /* Hero Section */
+        .announcement-bar p { margin: 0; }
+        .announcement-bar strong { color: #f5ebe0; }
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                         url('https://github.com/sgrasiella/observatorioAPLTeste/blob/main/imagens/fundo_principal.png?raw=true') center/cover;
             display: flex;
             align-items: center;
@@ -96,8 +84,18 @@
             font-size: 1.2rem;
             margin-bottom: 2rem;
         }
-               
-        /* Footer */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #2f9e41;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #455745;
+        }
         footer {
             background-color: #2f9e41;
             color: white;
@@ -116,9 +114,7 @@
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
-        .footer-section p {
-            margin-bottom: 0.5rem;
-        }
+        .footer-section p { margin-bottom: 0.5rem; }
         .social-links {
             display: flex;
             gap: 1rem;
@@ -127,49 +123,16 @@
             color: white;
             text-decoration: none;
         }
-        /* Button Styles */
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: #2f9e41;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #455745 ;
-        }
-        .chat-container {
-            position: fixed;
-            bottom: 50px;
-            left: 50px;
-            z-index: 1000;
-        }
     </style>
-    
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js"> </script>
-            <div class = "chat-container">
-                <langflow-chat
-                    window_title="Assistente do Observatório APL"
-                    flow_id="41fd2c06-e29c-4324-9501-b703737aa4ae"
-                    host_url="https://sgrasiella-langflow-serenatto-chatapl.hf.space"
-                    width = "600"
-                    height = "440"
-                    chat_position = "top-right"
-                    placeholder = "Digite sua pergunta..."
-                    online_message = "Online"
-                </langflow-chat>
-            </div>
     <header>
         <nav>
-            <a href="#" class="logo">
+            <a href="chat.html" class="logo">
                 <img src="https://github.com/sgrasiella/observatorioAPLTeste/blob/main/imagens/ifmg_vertical.png?raw=true" alt="Logo IFMG">
             </a>
             <div class="nav-links">
-                <a href="#">Home</a>
+                <a href="chat.html">Home</a>
                 <a href="#">Buscas</a>
                 <a href="#">Sobre</a>
                 <a href="#">Contato</a>
@@ -177,9 +140,8 @@
         </nav>
     </header>
 
-    <!-- Anúncio -->
     <div class="announcement-bar">
-        <p>OBSERVATÓRIO APLs |  <strong>IFMG</strong></p>
+        <p>OBSERVATÓRIO APLs | <strong>IFMG</strong></p>
     </div>
 
     <section class="hero">
@@ -189,8 +151,6 @@
             <a href="#produtos" class="btn">Explorar informações</a>
         </div>
     </section>
-
-
 
     <footer>
         <div class="footer-content">
