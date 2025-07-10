@@ -1,15 +1,36 @@
-<script
-  src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js">
-</script>
-       <div class = "chat-container">
-  <langflow-chat
-    window_title="CHAT APL"
-    flow_id="ceab17db-1aca-4a81-a45d-edea49e6038e"
-    host_url="https://sgrasiella-langflow-serenatto.hf.space"
-     width = "600"
-    height = "440" 
-         chat_position = "bottom-right"
-     placeholder = "Digite sua pergunta aqui..."
-      online_message = "Online"
-      >
-</langflow-chat>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat</title>
+  <style>
+    .chat-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <!-- Conteúdo do seu site -->
+
+  <!-- Código do chat (antes do </body>) -->
+  <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js"></script>
+
+  <div class="chat-container">
+    <langflow-chat
+      window_title="CHAT APL"
+      flow_id="ceab17db-1aca-4a81-a45d-edea49e6038e"
+      host_url="https://sgrasiella-langflow-serenatto.hf.space"
+      width="600"
+      height="440"
+      chat_position="bottom-right"
+      placeholder="Digite sua pergunta aqui..."
+      online_message="Online"
+    >
+    </langflow-chat>
+  </div>
+</body>
+</html>
