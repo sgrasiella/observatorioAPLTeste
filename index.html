@@ -140,12 +140,18 @@
         .btn:hover {
             background-color: #455745 ;
         }
+
+        .hidden {
+            display: none;
+        }        
+        
         .chat-container {
             position: fixed;
             bottom: 50px;
             left: 50px;
             z-index: 1000;
         }
+        
     </style>
     
 </head>
@@ -175,7 +181,7 @@
             </a>
             <div class="nav-links">
                 <a href="#">Home</a>
-                <a href="#">Buscas</a>
+                <a href="#" onclick="toggleChat()">Buscas</a>
                 <a href="#">Sobre</a>
                 <a href="#">Contato</a>
             </div>
@@ -218,6 +224,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleChat() {
+            const chatContainer = document.getElementById('chat-container');
+            chatContainer.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
 
